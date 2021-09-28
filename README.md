@@ -13,7 +13,7 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Links
-- Live Site URL: [https://ntth2000.github.io/time-tracking-dashboard.github.io/]
+- Live Site URL: [https://ntth2000.github.io/time-tracking-dashboard/]
 
 ## My process
 
