@@ -3,7 +3,7 @@
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
-
+![image](https://user-images.githubusercontent.com/57576629/135141906-ef1e5cee-3754-4989-a19d-742200e37079.png)
 ### The challenge
 
 Users should be able to:
