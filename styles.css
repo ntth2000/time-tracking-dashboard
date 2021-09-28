@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+    font-family: 'Rubik';
+    background-color:hsl(226, 43%, 10%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-out 0.2s;
+}
+body{
+    min-width: 375px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile{
+    position: relative;
+   max-width: 330px;
+   display: flex; 
+   flex-direction: column;
+   background-color: hsl(235, 46%, 20%);
+   border-radius: 15px;
+   width: 80%;
+   height: 210px;
+}
+.profile .header{
+    padding: 0 10% ;
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+    background-color: hsl(246, 80%, 60%);
+}
+.profile .header div:first-child{
+    flex: 1;
+}
+.profile .header div:last-child{
+    flex: 2;
+}
+.profile .header img{
+    width: 75px;
+    border: 3px #fff solid;
+    border-radius: 50%;
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color:  hsl(236, 100%, 87%);
+}
+.title{
+    font-weight: 300;
+    font-size: 23px;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex:1;
+}
+.time button{
+    font-size: 18px;
+    color: hsl(235, 45%, 61%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.time button:hover{
+    color: hsl(235, 70%, 94%);
+}
+.time button.active{
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.statistics{
+    position: relative;
+    margin-top: 1.5rem;
+    display: grid;
+    row-gap: 1.5rem;
+    width: 80%;
+    max-width: 330px;
+}
+
+.statistics .action{
+    position: relative;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+}
+.action .text{
+    background: hsl(235, 46%, 20%);
+    flex: 3.2;
+    border-radius: 15px;
+}
+.action.work{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 16px;
+}
+.action.play{
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 16px;
+}
+.action.study{
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 16px;
+}
+.action.exercise{
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 16px;
+}
+.action.social{
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 16px;
+}
+.action.self-care{
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 16px;
+}
+.action .header{
+    overflow: hidden;
+    position: relative;
+    flex:1;
+}
+.statistics .action .header div img{
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
+.action .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.action .text div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.action h1{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.action-name{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.925);
+}
+.action .text .first i{
+    cursor: pointer;
+    color: hsl(236, 100%, 87%);
+    font-size: 30px;
+}
+.action .text .first i:hover{
+    color: hsl(235, 70%, 94%);
+}
+.action .text .previous{
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+}
+
+.attribution{
+    margin-bottom: 1rem;
+    font-size: 15px; 
+    color: rgba(255, 255, 255, 0.925);
+    font-weight: 300;
+}
+
+.attribution a{
+    color: hsl(236, 100%, 87%);
+    font-style: italic;
+}
+@media screen and (min-width: 768px) {
+    .profile{
+        max-width: none;
+        width: 680px;
+    }
+    .profile .header div:first-child{
+        text-align: center;
+    }
+    .profile .header img{
+        width: 85px;
+    }
+    .profile .header .title{
+        font-size: 2rem;
+    }
+    .statistics{
+        max-width: none;
+        grid-template-columns: 330px 330px;
+        column-gap: 20px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        height: 100vh;
+    }
+    .main{
+        align-self: center;
+        flex-direction: row;
+        height: auto;
+    }
+    .profile{
+        flex: none;
+        width: 240px;
+        height: 500px;
+        margin-right: 20px;
+    }
+    .profile .header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10% 10%;
+    }
+    .profile .header img{
+        margin-bottom: 2rem;
+    }
+    .profile .header .title{
+        width: 50%;
+        font-size: 2.5rem;
+    }
+    .time{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10%;
+        justify-content: space-evenly;
+    }
+    .statistics{
+        width: auto;
+        margin: 0;
+        justify-content: center;
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 240px 240px;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .statistics .action{
+        height: 240px;
+    }
+    .action .text{
+        padding: 1rem 1.5rem;
+        flex:4.5;
+        justify-content: space-around;
+    }
+    .action h1{
+        font-size: 2.5rem;
+    }
+    .action .text .last{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+     .action .text .previous{
+        margin-top: 1rem;
+    }
+} 

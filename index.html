@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+  <div class="profile">
+    <div class="header">
+      <div>
+        <img src="images/image-jeremy.png" alt="profile-picture">
+      </div>
+      <div>
+        <p class="subtitle">Report for</p>
+        <p class="title">Jeremy Robson</p>
+      </div>
+       </div>
+     <div class="time">
+      <button class='daily'>Daily</button>
+      <button class="weekly active">Weekly</button>
+      <button class='monthly'>Monthly</button>
+    </div>
+  </div>
+  <div class="statistics">
+    <div class="action work">
+      <div class='header'>
+        <div>
+          <img src="images/icon-work.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Work
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current work-data'></h1>
+          <p class="previous work-data"></p>
+        </div>
+      </div>
+    </div>
+    <div class="action play">
+      <div class='header'>
+        <div>
+          <img src="images/icon-play.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Play
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current play-data'></h1>
+          <p class="previous play-data"></p>
+        </div>
+      </div>
+    </div>
+    <div class="action study">
+      <div class='header'>
+        <div>
+          <img src="images/icon-study.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Study
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current study-data'></h1>
+          <p class="previous study-data"></p>
+        </div>
+      </div>
+    </div>
+    <div class="action exercise">
+      <div class='header'>
+        <div>
+          <img src="images/icon-exercise.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Exercise
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current exercise-data'></h1>
+          <p class="previous exercise-data"></p>
+        </div>
+      </div>
+    </div>
+    <div class="action social">
+      <div class='header'>
+        <div>
+          <img src="images/icon-social.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Social
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current social-data'></h1>
+          <p class="previous social-data"></p>
+        </div>
+      </div>
+    </div>
+    <div class="action self-care">
+      <div class='header'>
+        <div>
+          <img src="images/icon-self-care.svg" alt="">
+        </div>
+      </div>
+      <div class='text'>
+        <div class='first'>
+          <p class="action-name">
+          Self care
+          </p>           
+          <p><i class='bx bx-dots-horizontal-rounded'></i></p>       
+        </div>
+        <div class='last'>
+          <h1 class='current self-care-data'></h1>
+          <p class="previous self-care-data"></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/ntth2000">Huyen Nguyen</a>.
+</div>
+<script src='app.js'></script>
+</body>
+</html>
